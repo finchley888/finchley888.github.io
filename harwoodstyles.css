@@ -22,3 +22,59 @@ body {
     margin-top: 0;
     margin-bottom: 0.5em;
 }
+
+/* ===================== CUSTOM SIDE NAV BAR =========================== */
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+            transform: translateX(80px);
+        }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#customSideNav a {
+  position: fixed;
+  left: -100px;
+  transition: 0.2s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border-radius: 0 5px 5px 0;
+}
+
+#customSideNav a:hover {
+  left: 0;
+  /* background-color: #F5F5F5;*/
+}
+
+#home {
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+  top: calc(50% - 10px);
+  background-color: #C0C0C0;
+}
+#about {
+  animation: 0.5s ease-out 0.1s 1 slideInFromRight;
+  top: calc(50% + 50px);
+  background-color: #C0C0C0;
+}
+#projects {
+  animation: 0.5s ease-out 0.2s 1 slideInFromRight;
+  top: calc(50% + 110px);
+  background-color: #C0C0C0;
+}
+#blog {
+  animation: 0.5s ease-out 0.3s 1 slideInFromRight;
+  top: calc(50% + 170px);
+  background-color: #C0C0C0;
+}
+
+#customDivider d {
+  margin-left: 100px;
+}
