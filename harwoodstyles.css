@@ -58,11 +58,12 @@ li a {
   transition: 0.5s;
 }
 
-/* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color to white and shift to the right*/
 .sidemenu a:hover {
   color: white;
   padding-left: 50px;
 }
+
 
 /* Position and style the close button (top right corner) */
 .sidemenu .closebtn {
@@ -85,11 +86,20 @@ li a {
   color: gray;
 }
 
+/*Content class for the different sections*/
+@keyframes fade-in {
+  from{opacity: 0; transform:translateY(30px);
+}
+  to{opacity: 1;}
+}
 .content{
   width: 75%;
   border: 15px;
   padding: 50px;
+  padding-top: 50%;
   margin: 20px;
   padding-left: 15%;
-  text-align: center;
+  text-align:left;
+  /* animation: fade-in 1.4s; */
+  opacity: 0;
 }

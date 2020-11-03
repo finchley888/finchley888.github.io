@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Finchley</title>
+  <title>Finchley Harwood</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="harwoodstyles.css">
 </head>
@@ -28,28 +28,31 @@
 
 </div>
 
-<div id="about" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">About Me</h1>
-  <p>I am passionate about using technology to solve problems.</p>
+<div id="about" class="content" style="padding-top: 20%;">
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">About Me</h1>
+  <p>Hello, my name is</p>
+  <h1 style="color:#00FFFF;">Finchley Harwood.</h1>
+  <h1 style="color:#B8B8B8;">I make software applications.</h1>
+  <p>I am a software engineer and data scientist based in South Wales, UK. I am passionate about using technology to solve problems.</p>
 </div>
 <div id="skills" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">Skills</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Skills</h1>
   <p>I am skilled in the following</p>
 </div>
 <div id="resume" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">Resume</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Resume</h1>
   <p>Here is a link to my resume</p>
 </div>
 <div id="projects" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">Projects</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Projects</h1>
   <p>Here are some of my favourite projects</p>
 </div>
 <div id="blog" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">Blog</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Blog</h1>
   <p>Here is my blog</p>
 </div>
 <div id="contact" class="content">
-  <h1 style="font-size:15px; color:#00FFFF">Contact</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Contact</h1>
   <p>Would you like to collaborate?</p>
 </div>
 
@@ -57,6 +60,7 @@
 function viewMenu() {
   document.getElementById("sideMenu").style.width = "100%";
   document.getElementById("openBtn").style.opacity = "0";
+
 }
 
 function closeMenu() {
@@ -73,6 +77,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+(function() {
+  var contentElements;
+  var windowHeight;
+
+  function init() {
+    contentElements = document.querySelectorAll('.content');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < contentElements.length; i++) {
+      var element = contentElements[i];
+      var positionFromTop = contentElements[i].getBoundingClientRect().top;
+
+      // wait for the element above to have faded in
+      if (positionFromTop - windowHeight <= 0) {
+        element.style.animation="fade-in 1.4s";
+        element.style.opacity = "1";
+      }
+
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
 </script>
 
 
