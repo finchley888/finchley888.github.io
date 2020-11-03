@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Finchley</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="harwoodstyles.css">
 </head>
 <body>
 
 <div id="topHeader" class="top-header ">
-    <button id="openBtn" class="openbtn" onclick="viewMenu()">☰</button>
-    <span >Finchley Harwood</span>
-  </div>
+    <li><a>Finchley</a></li>
+    <li style="float:right;"><a id="openBtn" class="openbtn" onclick="viewMenu()" style="opacity: 1;">☰</a></li>
+</div>
 
 
   <div id="sideMenu" class="sidemenu">
     <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a id="sec-about" href="#about" onclick="closeMenu()">About</a>
+    <a id="sec-skills" href="#skills" onclick="closeMenu()">Skills</a>
+    <a id="sec-resume" href="#resume" onclick="closeMenu()">Resume</a>
+    <a id="sec-projects" href="#projects" onclick="closeMenu()">Projects</a>
+    <a id="sec-blog" href="#blog" onclick="closeMenu()">Blog</a>
+    <a id="sec-contact" href="#contact" onclick="closeMenu()">Contact</a>
+
+
   </div>
 
 
 </div>
 
-<div class="content">
-  <h3>On Scroll Sticky Header</h3>
-  <p>The header will stick to the top when you reach its scroll position.</p>
-  <p>Scroll back up to remove the sticky effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<div id="about" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">About Me</h1>
+  <p>I am passionate about using technology to solve problems.</p>
+</div>
+<div id="skills" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">Skills</h1>
+  <p>I am skilled in the following</p>
+</div>
+<div id="resume" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">Resume</h1>
+  <p>Here is a link to my resume</p>
+</div>
+<div id="projects" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">Projects</h1>
+  <p>Here are some of my favourite projects</p>
+</div>
+<div id="blog" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">Blog</h1>
+  <p>Here is my blog</p>
+</div>
+<div id="contact" class="content">
+  <h1 style="font-size:15px; color:#00FFFF">Contact</h1>
+  <p>Would you like to collaborate?</p>
 </div>
 
 <script>
 function viewMenu() {
-  document.getElementById("sideMenu").style.width = "250px";
+  document.getElementById("sideMenu").style.width = "100%";
   document.getElementById("openBtn").style.opacity = "0";
 }
 
@@ -47,7 +64,17 @@ function closeMenu() {
   document.getElementById("openBtn").style.opacity = "1";
 
 }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 </script>
+
 
 </body>
 </html>

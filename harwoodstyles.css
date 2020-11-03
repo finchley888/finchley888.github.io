@@ -1,29 +1,36 @@
 body {
-  background-color: #001f3f;
+  background-color: #282C34;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /* Header Bar */
 .top-header {
-  padding: 10px 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
   color: white;
   font-size: 20px;
   position: fixed;
   top: 0;
   width:100%;
-  display: block;
+  display: inline;
 }
 
-.top-header span{
-  display:block;
-  float:right;
-  width:40%;
-  margin-right:50px;
-  text-align: right;
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
   padding-top: 10px;
+  padding-right: 50px;
+  text-decoration: none;
 }
-
 
 /* Sliding side menu */
 .sidemenu {
@@ -32,9 +39,9 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   opacity: 0.9;
-  background-color: #001f3f;
+  background-color: #282C34;
   overflow-x: hidden;
   padding-top: 70px;
   transition: 0.3s;
@@ -42,17 +49,19 @@ body {
 
 /* The sidepanel links */
 .sidemenu a {
-  padding: 8px 8px 8px 32px;
-  font-size: 25px;
+  padding: 8px 8px 8px 40px;
   text-decoration: none; /*remove underlines*/
+  font-size: 30px;
+  position: center;
   color: grey;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidemenu a:hover {
   color: white;
+  padding-left: 50px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -66,14 +75,21 @@ body {
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  font-size: 25px;
   cursor: pointer;
-  background-color: #001f3f;
+  background-color: #282C34;
   color: white;
-  padding: 2px 15px;
   border: none;
 }
 
 .openbtn:hover {
   color: gray;
+}
+
+.content{
+  width: 75%;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
+  padding-left: 15%;
+  text-align: center;
 }
