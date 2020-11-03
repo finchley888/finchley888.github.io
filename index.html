@@ -2,8 +2,10 @@
 <html>
 <head>
   <title>Finchley Harwood</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="harwoodstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="harwoodstyles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
 <body>
 
@@ -29,30 +31,53 @@
 </div>
 
 <div id="about" class="content" style="padding-top: 20%;">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">About Me</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-About Me-</h1>
   <p>Hello, my name is</p>
   <h1 style="color:#00FFFF;">Finchley Harwood.</h1>
   <h1 style="color:#B8B8B8;">I make software applications.</h1>
   <p>I am a software engineer and data scientist based in South Wales, UK. I am passionate about using technology to solve problems.</p>
 </div>
 <div id="skills" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Skills</h1>
-  <p>I am skilled in the following</p>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Skills-</h1>
+  <h1 style="color:#00FFFF;">Here are some technologies I've been working with recently: </h1>
+  <table style="width:75%;font-size:20px;">
+    <tr>
+      <th><i class="devicon-cplusplus-plain"></i>  C++</th>
+      <th ><i class="devicon-github-plain"></i>  GitHub</th>
+    </tr>
+    <tr>
+      <th><i class="devicon-git-plain"></i>  Git</th>
+      <th ><i class="devicon-java-plain"></i>      Java</th>
+    </tr>
+    <tr>
+      <th><i class="devicon-javascript-plain"></i>  Javascript</th>
+      <th ><i class="devicon-mysql-plain"></i>  MySQL</th>
+    </tr>
+    <tr>
+      <th><i class="devicon-html5-plain"></i>  HTML</th>
+      <th ><i class="devicon-css3-plain"></i> CSS</th>
+    </tr>
+    <tr>
+      <th><i class="devicon-python-plain"></i> python</th>
+      <th> ► Play! Framework</th>
+    </tr>
+
+  </table>
 </div>
 <div id="resume" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Resume</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Resume-</h1>
   <p>Here is a link to my resume</p>
 </div>
 <div id="projects" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Projects</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Projects-</h1>
   <p>Here are some of my favourite projects</p>
 </div>
 <div id="blog" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Blog</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Blog-</h1>
   <p>Here is my blog</p>
 </div>
 <div id="contact" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">Contact</h1>
+  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Contact-</h1>
   <p>Would you like to collaborate?</p>
 </div>
 
@@ -93,7 +118,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
       // wait for the element above to have faded in
       if (positionFromTop - windowHeight <= 0) {
-        element.style.animation="fade-in 1.4s";
+        element.style.animation="fade-in 2s";
         element.style.opacity = "1";
       }
 
@@ -107,7 +132,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   checkPosition();
 })();
 </script>
-
-
 </body>
 </html>
