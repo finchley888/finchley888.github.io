@@ -39,8 +39,8 @@
 </div>
 <div id="skills" class="content">
   <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Skills-</h1>
-  <h1 style="color:#00FFFF;">Here are some technologies I've been working with recently: </h1>
-  <table style="width:75%;font-size:20px;">
+  <h1>Here are some technologies I've been working with recently: </h1>
+  <table style="color:#00FFFF;width:75%;font-size:20px;padding:20px;margin-left: auto;margin-right: auto;">
     <tr>
       <th><i class="devicon-cplusplus-plain"></i>  C++</th>
       <th ><i class="devicon-github-plain"></i>  GitHub</th>
@@ -98,7 +98,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: "smooth", block: "start"
         });
     });
 });
@@ -114,7 +114,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   function checkPosition() {
     for (var i = 0; i < contentElements.length; i++) {
       var element = contentElements[i];
-      var positionFromTop = contentElements[i].getBoundingClientRect().top;
+      var positionFromTop = contentElements[i].getBoundingClientRect().bottom;
 
       // wait for the element above to have faded in
       if (positionFromTop - windowHeight <= 0) {
