@@ -103,3 +103,25 @@ li a {
   /* animation: fade-in 1.4s; */
   opacity: 0;
 }
+
+.card {
+  box-shadow: 0px 10px -14px 14px #FFF;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.card .title {
+  color: #B8B8B8;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #00FFFF;
+}
+
+.card a:hover {
+  opacity: 0.7;
+}
