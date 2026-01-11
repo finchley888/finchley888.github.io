@@ -1,150 +1,259 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Finchley Harwood</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="harwoodstyles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finchley Harwood - Software Engineer</title>
 
-<div id="topHeader" class="top-header ">
-    <li><a>Finchley</a></li>
-    <li style="float:right;"><a id="openBtn" class="openbtn" onclick="viewMenu()" style="opacity: 1;">☰</a></li>
-</div>
-
-
-  <div id="sideMenu" class="sidemenu">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
-    <a id="sec-about" href="#about" onclick="closeMenu()">About</a>
-    <a id="sec-skills" href="#skills" onclick="closeMenu()">Skills</a>
-    <a id="sec-resume" href="#resume" onclick="closeMenu()">Resume</a>
-    <a id="sec-projects" href="#projects" onclick="closeMenu()">Projects</a>
-    <a id="sec-blog" href="#blog" onclick="closeMenu()">Blog</a>
-    <a id="sec-contact" href="#contact" onclick="closeMenu()">Contact</a>
-
-
-  </div>
-
-
-</div>
-
-<div id="about" class="content" style="padding-top: 20%;">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-About Me-</h1>
-  <p>Hello, my name is</p>
-  <h1 style="color:#00FFFF;">Finchley Harwood.</h1>
-  <h1 style="color:#B8B8B8;">I make software applications.</h1>
-  <p>I am a software engineer and data scientist based in South Wales, UK. I am passionate about using technology to solve problems.</p>
-</div>
-<div id="skills" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Skills-</h1>
-  <h1>Here are some technologies I've been working with recently: </h1>
-  <table style="color:#00FFFF;width:75%;font-size:20px;padding:20px;margin-left: auto;margin-right: auto;">
-    <tr>
-      <th><i class="devicon-cplusplus-plain"></i>  C++</th>
-      <th ><i class="devicon-github-plain"></i>  GitHub</th>
-    </tr>
-    <tr>
-      <th><i class="devicon-git-plain"></i>  Git</th>
-      <th ><i class="devicon-java-plain"></i>      Java</th>
-    </tr>
-    <tr>
-      <th><i class="devicon-javascript-plain"></i>  Javascript</th>
-      <th ><i class="devicon-mysql-plain"></i>  MySQL</th>
-    </tr>
-    <tr>
-      <th><i class="devicon-html5-plain"></i>  HTML</th>
-      <th ><i class="devicon-css3-plain"></i> CSS</th>
-    </tr>
-    <tr>
-      <th><i class="devicon-python-plain"></i> python</th>
-      <th> ► Play! Framework</th>
-    </tr>
-
-  </table>
-</div>
-<div id="projects" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Projects-</h1>
-  <h1>Here are some of my favourite projects</h1>
-  <table style="width:75%;font-size:20px;padding:20px;margin-left: auto;margin-right: auto;">
-    <tr>
-      <th><div class="card">
-        <h1 style="color:#00FFFF;">Chess Web App</h1>
-        <img src="images/chess.gif" alt="Chess" style="width:100%">
-        <p class="title">Play! <i class="devicon-java-plain"></i> <i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-git-plain"></i> </p>
-        <a href="https://github.com/finchley888/ChessWebApp" target="_blank"> View On GitHub </a>
-      </div></th>
-      <th ><div class="card">
-        <h1 style="color:#00FFFF;">C++ Chess</h1>
-        <img src="images/cpp_chess.gif" alt="C++ Chess" style="width:100%">
-        <p class="title"><i class="devicon-cplusplus-plain"></i> </p>
-    
-      </div></th>
-    </tr>
-    </table>
-  
-  
-</div>
-<div id="blog" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Blog-</h1>
-  <p>Here is my blog</p>
-</div>
-<div id="contact" class="content">
-  <h1 style="font-size:10px; color:#00FFFF;text-align:center;">-Contact-</h1>
-  <p>Would you like to collaborate?</p>
-</div>
-
-<script>
-function viewMenu() {
-  document.getElementById("sideMenu").style.width = "100%";
-  document.getElementById("openBtn").style.opacity = "0";
-
-}
-
-function closeMenu() {
-  document.getElementById("sideMenu").style.width = "0";
-  document.getElementById("openBtn").style.opacity = "1";
-
-}
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: "smooth", block: "start"
-        });
-    });
-});
-(function() {
-  var contentElements;
-  var windowHeight;
-
-  function init() {
-    contentElements = document.querySelectorAll('.content');
-    windowHeight = window.innerHeight;
-  }
-
-  function checkPosition() {
-    for (var i = 0; i < contentElements.length; i++) {
-      var element = contentElements[i];
-      var positionFromTop = contentElements[i].getBoundingClientRect().bottom;
-
-      // wait for the element above to have faded in
-      if (positionFromTop - windowHeight <= 0) {
-        element.style.animation="fade-in 2s";
-        element.style.opacity = "1";
+    <style>
+      :root {
+        --text: #111;
+        --muted: #666;
+        --bg: #fff;
+        --accent: #000;
       }
 
-    }
-  }
+      * {
+        box-sizing: border-box;
+      }
 
-  window.addEventListener('scroll', checkPosition);
-  window.addEventListener('resize', init);
+      body {
+        margin: 0;
+        padding: 4rem 1.5rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
 
-  init();
-  checkPosition();
-})();
-</script>
-</body>
+      main {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.25rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--text);
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover {
+        border-bottom-color: var(--accent);
+      }
+
+      footer {
+        margin-top: 4rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .role-info {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+      }
+
+      footer a {
+        font-size: 0.9rem;
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      footer a:hover {
+        border-bottom-color: var(--accent);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Finchley Harwood</h1>
+        <p class="subtitle">Senior Software Engineer · Cloud · AI · Security</p>
+      </header>
+
+      <section>
+        <p>
+          I have over 5 years of experience developing full-stack applications
+          with a strong focus on Machine Learning, Stream Processing, Frontend
+          Development, and Secure Cloud-Native Architectures. My experience
+          spans multiple sectors including defence, healthcare, and the
+          pharmaceutical industry.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <article>
+          <h3>Software Engineer / Security Officer</h3>
+          <span class="role-info"
+            ><strong>Verisian Ltd</strong> · June 2025 – Present · Remote</span
+          >
+          <p>
+            Responsible for security across the entire stack. Led compliance
+            efforts for GDPR, HIPAA, and CIS IG1, passed penetration testing and
+            customer security assessments, and supported successful enterprise
+            pharmaceutical contracts. Contributed heavily across the stack while
+            establishing documentation, architecture, and testing standards and
+            mentoring engineers.
+          </p>
+        </article>
+
+        <article>
+          <h3>Director of Engineering</h3>
+          <span class="role-info"
+            ><strong>Agile Kinetic Ltd</strong> · Oct 2023 – June 2025 · Remote
+            / Newport</span
+          >
+          <p>
+            Promoted from Lead Engineer to Director of Engineering and led the
+            transformation of an AI-powered healthcare platform from proof of
+            concept to a secure, scalable production system. Delivered NHS and
+            GDPR compliance, Cyber Essentials Plus, successful penetration
+            testing, and G-Cloud approval while leading technical delivery and
+            team development.
+          </p>
+        </article>
+
+        <article>
+          <h3>Software Engineer</h3>
+          <span class="role-info"
+            ><strong>Fat Potato Ltd</strong> · July 2022 – Oct 2023 ·
+            Remote</span
+          >
+          <p>
+            Consultant software engineer in the cyber security and defence
+            sector. Built a greenfield product end-to-end, working closely with
+            customers on experimentation, requirements analysis, and scaling
+            cloud infrastructure in security-sensitive environments.
+          </p>
+        </article>
+
+        <article>
+          <h3>Software Engineer</h3>
+          <span class="role-info"
+            ><strong>Driver and Vehicle Licensing Agency</strong> · Sept 2020 –
+            July 2022 · Swansea</span
+          >
+          <p>
+            Worked in large-scale government systems with a strong focus on
+            testing, reliability, accessibility, and agile delivery.
+            Independently designed and built tools to detect complex business
+            logic errors before reaching production, significantly reducing
+            delivery timelines.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <article>
+          <h3>MSc Software Engineering</h3>
+          <span class="role-info"
+            ><strong>University of Wales Trinity St. David</strong> · 2020 -
+            2022 · Distinction</span
+          >
+        </article>
+
+        <article>
+          <h3>MMath & Phys (Hons) Mathematics and Physics</h3>
+          <span class="role-info"
+            ><strong>University of Manchester</strong> · 2016 - 2020 ·
+            First</span
+          >
+        </article>
+
+        <article>
+          <h3>Certified Developer Associate</h3>
+          <span class="role-info"
+            ><strong>AWS Certification</strong> · Aug 2023 - Aug 2026
+          </span>
+        </article>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+
+        <ul>
+          <li>
+            <strong
+              >MoveLab: Validation and Development of Novel Cross-Platform Gait
+              and Mobility Assessments Using Gold Standard Motion Capture and
+              Clinical Standard Assessment</strong
+            ><br />
+            <span>Sensors 2025</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <div class="footer-links">
+          <a href="https://github.com/finchley888">GitHub</a>
+          <a href="https://www.linkedin.com/in/finchley-harwood">LinkedIn</a>
+          <a href="mailto:finchleyharwood5@gmail.com">Email</a>
+        </div>
+        <div class="footer-links">
+          <div>© <span id="year"></span> Finchley Harwood</div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
