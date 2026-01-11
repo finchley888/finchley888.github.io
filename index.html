@@ -197,10 +197,6 @@
               </p>
             </div>
           </div>
-          <div class="dark-mode-switch">
-            <input type="checkbox" id="dark-mode-toggle" />
-            <label for="dark-mode-toggle"></label>
-          </div>
         </div>
       </header>
 
@@ -333,8 +329,6 @@
     </main>
 
     <script>
-      const toggle = document.getElementById("dark-mode-toggle");
-
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
@@ -342,14 +336,6 @@
         document.body.classList.add("dark");
         toggle.checked = true;
       }
-
-      toggle.addEventListener("change", () => {
-        if (toggle.checked) {
-          document.body.classList.add("dark");
-        } else {
-          document.body.classList.remove("dark");
-        }
-      });
 
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
